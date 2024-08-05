@@ -1,0 +1,55 @@
+{
+  "attractions": [
+    {
+      "name": "Sahara Desert",
+      "location": "Merzouga",
+      "description": "The Sahara Desert is the world's largest hot desert, and one of the harshest environments on the planet.",
+      "image": ["images/des.jpg","images/dees.jpg" ]
+    },
+    {
+      "name": "Todgha Gorge",
+      "location": "Tinghir",
+      "description": "Todgha Gorge is a canyon in the eastern part of the High Atlas Mountains in Morocco, near the town of Tinghir.",
+      "image":  ["images/To.jpg","images/tor.jpg" ]
+    },
+    {
+      "name": "Ait Benhaddou",
+      "location": "Ouarzazate",
+      "description": "Ait Benhaddou is a fortified city along the former caravan route between the Sahara and Marrakech.",
+      "image": ["images/aitb.jpg","images/had.jpg"]
+    },
+   
+    {
+      "name": "Erfoud",
+      "location": "Erfoud",
+      "description": "Erfoud is known for its fossils, with numerous shops selling fossils and minerals.",
+      "image": ["images/erf.jpg","images/errf.jpg" ]
+    },
+    {
+      "name": "Ziz Valley",
+      "location": "Errachidia",
+      "description": "The Ziz Valley is a large oasis in the eastern part of Morocco, known for its palm groves and scenic landscapes.",
+      "image": ["images/erra.jpg","images/dees.jpg" ]
+    },
+
+    {
+      "name": "Tafilalt Oasis",
+      "location": "Errachidia",
+      "description": "The Tafilalt Oasis is one of the largest oases in Morocco, providing fertile land for agriculture.",
+      "image": ["images/oua.jpg","images/Oa.jpg" ]
+    },
+    {
+      "name": "Ouarzazate",
+      "location": "Ouarzazate",
+      "description": "Ouarzazate is a city in southern Morocco, known as the gateway to the Sahara Desert and for its film studios.",
+      "image": ["images/our.jpg","images/ours.webp" ]
+    },
+    {
+      "name": "Dades Gorge",
+      "location": "Boumalne Dades",
+      "description": "Dades Gorge is a gorge in the Atlas Mountains in Morocco, known for its stunning rock formations and scenic views.",
+      "image": ["images/Gd.jpg","images/gds.jpg" ]
+    }
+  
+  ]
+}

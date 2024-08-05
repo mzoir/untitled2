@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "20098166270",
+    "project_id": "plmo-c5ddd",
+    "storage_bucket": "plmo-c5ddd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20098166270:android:670a172461d19e606964af",
+        "android_client_info": {
+          "package_name": "com.example.dil"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAV5PY1EFNs448uJ7blPkNt60nzVynNBic"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20098166270:android:028e31a88bb405e36964af",
+        "android_client_info": {
+          "package_name": "com.example.untitled2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAV5PY1EFNs448uJ7blPkNt60nzVynNBic"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
