@@ -4,7 +4,7 @@
       "name": "Hotel Xaluca Dades",
       "location": "Boumalne Dades",
       "price": 34.5,
-      "description": "Hotel Xaluca Dades offers stunning views of the Dades Valley and the Atlas Mountains, featuring traditional Moroccan decor",
+      "description": "Hotel Xaluca Dades offers stunning views of the Dades Valley and the Atlas Mountains, featuring traditional Moroccan decor.",
       "image": [
         "https://optim.tildacdn.net/tild3764-6436-4063-b930-633539653461/-/resize/339x/-/format/webp/Swimming_area_Hotel_.jpg",
         "https://optim.tildacdn.net/tild3538-3537-4661-b135-623666663065/-/resize/339x/-/format/webp/Swimming_area_Hotel_.jpg",
@@ -12,7 +12,8 @@
       ],
       "reservation_link": "https://344339_kasbah-hotel-xaluca-arfoud.book-direct.website/en/",
       "phone_number": "+212 5248-92828",
-      "map": "https://www.bing.com/maps?mepi=128%7EHotel%7EUnknown%7EMap_Image&ty=18&q=Hotel+Xaluca+Dades+map&segment=Hotel&ppois=31.374296188354492_-5.9827470779418945_Hotel+Xaluca+Dades+map_%7E&cp=31.374304%7E-5.977442&lvl=16.0&v=2&sV=1&FORM=MPSRPL"
+      "map": "https://www.bing.com/maps?mepi=128%7EHotel%7EUnknown%7EMap_Image&ty=18&q=Hotel+Xaluca+Dades+map&segment=Hotel&ppois=31.374296188354492_-5.9827470779418945_Hotel+Xaluca+Dades+map_%7E&cp=31.374304%7E-5.977442&lvl=16.0&v=2&sV=1&FORM=MPSRPL",
+      "rating": 4.5
     },
     {
       "name": "Kasbah Hotel Xaluca Arfoud",
@@ -26,7 +27,8 @@
       ],
       "reservation_link": "https://xaluca.com/kasbahhotelxaluca",
       "phone_number": "+212 5355-77777",
-      "map" : "https://www.bing.com/maps?mepi=128%7EHotel%7EUnknown%7ELargeMapLink&ty=18&q=Kasbah+Hotel+Xaluca+Arfoud&segment=Hotel&ppois=31.487056732177734_-4.213201999664307_Kasbah+Hotel+Xaluca+Arfoud_%7E&cp=31.487053%7E-4.213192&v=2&sV=1&FORM=MPSRPL&lvl=16.0"
+      "map": "https://www.bing.com/maps?mepi=128%7EHotel%7EUnknown%7ELargeMapLink&ty=18&q=Kasbah+Hotel+Xaluca+Arfoud&segment=Hotel&ppois=31.487056732177734_-4.213201999664307_Kasbah+Hotel+Xaluca+Arfoud_%7E&cp=31.487053%7E-4.213192&v=2&sV=1&FORM=MPSRPL&lvl=16.0",
+      "rating": 4.4
     },
     {
       "name": "Chez Pierre",
@@ -39,7 +41,8 @@
       ],
       "reservation_link": "https://chezpierre.org/",
       "phone_number": "+212 5248-55678",
-      "map": "https://www.bing.com/maps?mepi=128%7EVacationRental%7EUnknown%7ELargeMapLink&ty=18&q=Chez+Pierre+map&ppois=31.511457443237305_-5.936528205871582_Chez+Pierre+map_%7E&cp=31.51124%7E-5.766449&v=2&sV=1&FORM=MPSRPL&lvl=11.0"
+      "map": "https://www.bing.com/maps?mepi=128%7EVacationRental%7EUnknown%7ELargeMapLink&ty=18&q=Chez+Pierre+map&ppois=31.511457443237305_-5.936528205871582_Chez+Pierre+map_%7E&cp=31.51124%7E-5.766449&v=2&sV=1&FORM=MPSRPL&lvl=11.0",
+      "rating": 4.6
     },
     {
       "name": "Kasbah Tizimi",
@@ -53,7 +56,8 @@
       ],
       "reservation_link": "http://kasbah-tizimi.com/",
       "phone_number": "+212 5355-65656",
-      "map": "https://www.bing.com/maps?mepi=128%7EHotel%7EUnknown%7EMap_Image&ty=18&q=Kasbah+Tizimi+Erfoud+map&segment=Hotel&ppois=31.42514991760254_-4.232150077819824_Kasbah+Tizimi+Erfoud+map_%7E&cp=31.425158%7E-4.226838&lvl=16.0&v=2&sV=1&FORM=MPSRPL"
+      "map": "https://www.bing.com/maps?mepi=128%7EHotel%7EUnknown%7EMap_Image&ty=18&q=Kasbah+Tizimi+Erfoud+map&segment=Hotel&ppois=31.42514991760254_-4.232150077819824_Kasbah+Tizimi+Erfoud+map_%7E&cp=31.425158%7E-4.226838&lvl=16.0&v=2&sV=1&FORM=MPSRPL",
+      "rating": 4.3
     },
     {
       "name": "Palais du Desert",
@@ -67,7 +71,8 @@
       ],
       "reservation_link": "http://palaisdudesert.com/",
       "phone_number": "+212 5357-78901",
-      "map": "https://www.bing.com/maps?mepi=128%7EHotel%7EUnknown%7EMap_Image&ty=18&q=Palais+du+Desert+Errachidia+map&segment=Hotel&ppois=31.944929122924805_-4.398677825927734_Palais+du+Desert+Errachidia+map_%7E&cp=31.944938%7E-4.393363&lvl=16.0&v=2&sV=1&FORM=MPSRPL"
+      "map": "https://www.bing.com/maps?mepi=128%7EHotel%7EUnknown%7EMap_Image&ty=18&q=Palais+du+Desert+Errachidia+map&segment=Hotel&ppois=31.944929122924805_-4.398677825927734_Palais+du+Desert+Errachidia+map_%7E&cp=31.944938%7E-4.393363&lvl=16.0&v=2&sV=1&FORM=MPSRPL",
+      "rating": 4.5
     },
     {
       "name": "Riad Salam Erfoud",
@@ -80,7 +85,9 @@
       ],
       "reservation_link": "http://riadsalam-erfoud.com/",
       "phone_number": "+212 5356-56565",
-      "map": "https://www.bing.com/maps?&mepi=128~Hotel~Unknown~LargeMapLink&ty=18&q=Kasbah%20Tizimi%20hotel%20map&segment=Hotel&ppois=31.428951263427734_-4.245874881744385_Kasbah%20Tizimi%20hotel%20map_~&cp=31.428951~-4.245875&v=2&sV=1&FORM=MPSRPL" } ,
+      "map": "https://www.bing.com/maps?&mepi=128~Hotel~Unknown~LargeMapLink&ty=18&q=Kasbah%20Tizimi%20hotel%20map&segment=Hotel&ppois=31.428951263427734_-4.245874881744385_Kasbah%20Tizimi%20hotel%20map_~&cp=31.428951~-4.245875&v=2&sV=1&FORM=MPSRPL&lvl=16.0",
+      "rating": 4.4
+    },
     {
       "name": "Hotel Belere Erfoud",
       "location": "Erfoud",
@@ -94,6 +101,8 @@
       "reservation_link": "https://www.belerehotels.com/",
       "phone_number": "+212 5354-33567",
       "map": "https://www.bing.com/maps?mepi=128%7EHotel%7EUnknown%7EMap_Image&ty=18&q=Hotel+Belere+Erfoud+map&segment=Hotel&ppois=31.43535041809082_-4.227156162261963_Hotel+Belere+Erfoud+map_%7E&cp=31.435359%7E-4.221844&lvl=16.0&v=2&sV=1&FORM=MPSRPL"
+      ,
+      "rating" : 4.0
     },
     {
       "name": "Auberge Les Roches",
@@ -108,6 +117,7 @@
       "reservation_link": "http://www.aubergelesroches.com/",
       "phone_number": "+212 5358-97865",
       "map": "https://www.bing.com/maps?mepi=128%7EHotel%7EUnknown%7EMap_Image&ty=18&q=Auberge+Les+Roches+Merzouga+map&segment=Hotel&ppois=31.095680236816406_-4.01373291015625_Auberge+Les+Roches+Merzouga+map_%7E&cp=31.095689%7E-4.008419&lvl=16.0&v=2&sV=1&FORM=MPSRPL"
+      , "rating" : 4.0
     },
     {
       "name": "Kasbah Hotel Tombouctou",
@@ -122,6 +132,7 @@
       "reservation_link": "http://tombouctoumerzouga.com/",
       "phone_number": "+212 5359-56789",
       "map": "https://www.bing.com/maps?mepi=128%7EHotel%7EUnknown%7EMap_Image&ty=18&q=Kasbah+Hotel+Tombouctou+Merzouga+map&segment=Hotel&ppois=31.089073181152344_-4.01304292678833_Kasbah+Hotel+Tombouctou+Merzouga+map_%7E&cp=31.089082%7E-4.007731&lvl=16.0&v=2&sV=1&FORM=MPSRPL"
+      , "rating" : 4.0
     },
     {
       "name": "Riad Nomad",
@@ -136,6 +147,7 @@
       "reservation_link": "https://riadnomad.com/",
       "phone_number": "+212 5356-12345",
       "map": "https://www.bing.com/maps?mepi=128%7EHotel%7EUnknown%7EMap_Image&ty=18&q=Riad+Nomad+Merzouga+map&segment=Hotel&ppois=31.08553123474121_-4.012092590332031_Riad+Nomad+Merzouga+map_%7E&cp=31.08554%7E-4.006781&lvl=16.0&v=2&sV=1&FORM=MPSRPL"
+      , "rating" : 4.0
     }
   ]
 }

@@ -23,18 +23,17 @@ class _AttractionsPageState extends State<AttractionsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:  Colors.blue,
+      backgroundColor:  Colors.white,
       appBar: AppBar(
-        backgroundColor:  Colors.blue,
         title: Text('Attractions'),
-        titleTextStyle: TextStyle(color: Colors.white,fontFamily: 'raleway',fontSize: 23,fontWeight: FontWeight.bold),
+        titleTextStyle: TextStyle(color: Colors.black,fontFamily: 'raleway',fontSize: 23,fontWeight: FontWeight.bold),
         centerTitle: true,
 
         actions : [
         IconButton(
         tooltip: "viewaccount",
         icon:
-        const Icon(Icons.account_circle, color: Colors.white, size: 32),
+        const Icon(Icons.account_circle, color: Colors.black, size: 32),
         onPressed: () {
           final FirebaseAuth _auth = FirebaseAuth.instance;
           final user = FirebaseAuth.instance.currentUser;
@@ -58,9 +57,13 @@ class _AttractionsPageState extends State<AttractionsPage> {
                 var attraction = attractionViewModel.attractions[index];
                 bool isFavorite =
                     attractionViewModel.favoriteAttractions.contains(index);
-                return Card(
+                return SizedBox(
+                  height: 125,
+                  child:
+                Card(
+                    color: Colors.blueGrey,
+child:Center(
 
-                  color: Colors.blueGrey,
                   child: ListTile(
                     leading: Image.asset(
                       attraction.image[0],
@@ -122,6 +125,7 @@ class _AttractionsPageState extends State<AttractionsPage> {
                       },
 
                   ),
+                ),),
                 );
               },
             );

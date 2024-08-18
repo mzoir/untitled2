@@ -1,0 +1,37 @@
+{
+  "restaurant": [
+    {
+      "id": "1",
+      "nom": "Dar Yacout",
+      "adress": "79 Derb Sidi Ahmed Soussi, Marrakech",
+      "ville": "Marrakech",
+      "rating": 4.6,
+      "images": [
+        "https://example.com/images/dar_yacout_1.jpg",
+        "https://example.com/images/dar_yacout_2.jpg"
+      ]
+    },
+    {
+      "id": "2",
+      "nom": "La Sqala",
+      "adress": "Boulevard Des Almohades, Casablanca",
+      "ville": "Casablanca",
+      "rating": 4.7,
+      "images": [
+        "https://example.com/images/la_sqala_1.jpg",
+        "https://example.com/images/la_sqala_2.jpg"
+      ]
+    },
+    {
+      "id": "3",
+      "nom": "Le Saveur du Poisson",
+      "adress": "2 Avenue Hassan II, Tangier",
+      "ville": "Tangier",
+      "rating": 4.8,
+      "images": [
+        "https://example.com/images/le_saveur_du_poisson_1.jpg",
+        "https://example.com/images/le_saveur_du_poisson_2.jpg"
+      ]
+    }
+  ]
+}

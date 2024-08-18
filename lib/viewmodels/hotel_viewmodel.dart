@@ -3,13 +3,21 @@ import 'package:untitled2/models/hotel.dart';
 
 class HotelViewModel with ChangeNotifier {
   List<Hotel> _hotels = [];
+  List<Hotel> _filtredHotel =[];
+
+  List<Hotel> get filtres => _filtredHotel;
   Set<int> _favoriteHotels = {};
 
   List<Hotel> get hotels => _hotels;
   Set<int> get favoriteHotels => _favoriteHotels;
 
+  set filtredHotel(List<Hotel> value) {
+    _filtredHotel = value;
+  }
+
   Future<void> loadHotels() async {
     _hotels = await Hotel.loadHotels();
+    _filtredHotel = _hotels;
     notifyListeners();
   }
 

@@ -7,7 +7,12 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:untitled2/viewmodels/attraction_viewmodel.dart';
 
-class FavoriteAttractionsPage extends StatelessWidget {
+class FavoriteAttractionsPage extends StatefulWidget {
+  @override
+  State<FavoriteAttractionsPage> createState() => _FavoriteAttractionsPageState();
+}
+
+class _FavoriteAttractionsPageState extends State<FavoriteAttractionsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,6 +41,15 @@ class FavoriteAttractionsPage extends StatelessWidget {
                     ),
                     title: Text(attraction.name),
                     subtitle: Text(attraction.location),
+                    trailing: ElevatedButton(
+                      child: Icon(Icons.close),
+                      onPressed: () {
+                        setState(() {
+                          attractionViewModel.toggleFavorite(attractionViewModel.attractions.indexOf(attraction));
+
+                        });
+                      },
+                    ),
                     onTap: () {
                       // Handle onTap event, maybe navigate to a detail page
                     },

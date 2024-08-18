@@ -2,14 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:untitled2/viewmodels/hotel_viewmodel.dart';
 import 'hotel_details.dart';
+class FavPage extends StatefulWidget {
+  const FavPage({super.key});
 
-class FavPage extends StatelessWidget {
+  @override
+  State<FavPage> createState() => _FavPageState();
+}
+
+class _FavPageState extends State<FavPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('Favorite Hotels'),
-        backgroundColor: Color(0xff87a9e3),
         centerTitle: true,
       ),
       body: Consumer<HotelViewModel>(
@@ -33,6 +38,15 @@ class FavPage extends StatelessWidget {
                     ),
                     title: Text(hotel.name),
                     subtitle: Text('${hotel.location}, ${hotel.location}'),
+                    trailing: ElevatedButton(
+                      child: Icon(Icons.close),
+                      onPressed: () {
+                        setState(() {
+                          hotelViewModel.toggleFavorite(hotelViewModel.hotels.indexOf(hotel));
+
+                        });
+                      },
+                    ),
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
                         builder: (context) => eveHotel(item: hotel),

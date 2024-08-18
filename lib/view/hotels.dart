@@ -17,6 +17,8 @@ class HotelsPage extends StatefulWidget {
 
 class _HotelsPageState extends State<HotelsPage> {
 
+  bool _isSearching= false;
+  String _searchText="";
 
   @override
   void initState() {
@@ -47,27 +49,59 @@ class _HotelsPageState extends State<HotelsPage> {
         }
       });
     }
-
-
-
-
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Color(0xff87a9e3),
-        title: Text('HOTELS!'),
-        centerTitle: true,
+        backgroundColor: Colors.white,
+        title: _isSearching
+            ? TextField(
+          autofocus: true,
+          decoration: InputDecoration(
+            hintText: 'Search...',
+            border: InputBorder.none,
+          ),
+          style: TextStyle(color: Colors.black),
+          onChanged: _filtedHotel,
+        )
+            : Text(
+          'Hotel',
+          style: TextStyle(
+              fontStyle: FontStyle.normal,
+              fontFamily: "Roboto",
+              color: Colors.black),
+        ),
+        centerTitle: false,
+
         leading: BackButton(
-          color: Color(0xfff2e4e4),
+          color: Colors.black,
           onPressed: () {
             Navigator.pop(context);
           },
         ),
         actions: [
+      _isSearching
+      ? IconButton(
+      icon: Icon(Icons.close),
+      onPressed: () {
+        setState(() {
+          _isSearching = false;
+          _searchText = "";
+          _filtedHotel(""); // Reset to all foods
+        });
+      },
+    )
+        : IconButton(
+    icon: Icon(Icons.search),
+    onPressed: () {
+    setState(() {
+    _isSearching = true;
+    });
+    },
+    ),
           IconButton(
             tooltip: "viewaccount",
             icon:
-            const Icon(Icons.account_circle, color: Colors.white, size: 32),
+            const Icon(Icons.account_circle, color: Colors.black, size: 32),
             onPressed: () {
               final user = FirebaseAuth.instance.currentUser;
               Navigator.of(context).push(MaterialPageRoute(
@@ -82,18 +116,23 @@ class _HotelsPageState extends State<HotelsPage> {
       ),
       body: Consumer<HotelViewModel>(
         builder: (context, hotelViewModel, child) {
-          if (hotelViewModel.hotels.isEmpty) {
-            return Center(child: CircularProgressIndicator());
+          if (hotelViewModel.filtres.isEmpty) {
+            return Center(child: Text('Not Found'));
           } else {
             return ListView.builder(
-              itemCount: hotelViewModel.hotels.length,
+              itemCount: hotelViewModel.filtres.length,
               itemBuilder: (context, index) {
-                var hotel = hotelViewModel.hotels[index];
+                var hotel = hotelViewModel.filtres[index];
                 bool isFavorite = hotelViewModel.favoriteHotels.contains(index);
-                return Card(
-                  margin: EdgeInsets.all(3),
+                return Container(
+                height: 125,
+                padding : EdgeInsets.symmetric(),
+                    child:Card(
+                  margin: EdgeInsets.all(6),
                   borderOnForeground: true,
-                  color: Colors.blueGrey,
+                  color: Colors.blue,
+                      child: Center(
+
                   child: ListTile(
                     leading: Image.network(
                       hotel.images[0],
@@ -103,7 +142,7 @@ class _HotelsPageState extends State<HotelsPage> {
                     ),
                     title: Text(hotel.name),
                     titleTextStyle: TextStyle(fontSize: 18.0,fontWeight: FontWeight.bold,color:Colors.white),
-                    subtitle: Text('${hotel.location}',),
+                    subtitle: Text('${hotel.location} \nrating:${hotel.rating}',),
                     subtitleTextStyle: TextStyle(fontSize: 14.0,fontWeight: FontWeight.bold,color:Colors.black),
                     trailing: IconButton(
                       tooltip: "add to favourite",
@@ -156,7 +195,7 @@ class _HotelsPageState extends State<HotelsPage> {
                       ));
                     },
                   ),
-                );
+                ),),);
               },
             );
           }
@@ -214,5 +253,24 @@ class _HotelsPageState extends State<HotelsPage> {
         ),
       ),
     );
+  }
+
+  void _filtedHotel(String query) {
+    final viewModel = Provider.of<HotelViewModel>(context, listen: false);
+
+    setState(() {
+      _searchText = query;
+      if (query.isEmpty) {
+        viewModel.filtredHotel = viewModel.hotels;
+      } else {
+        viewModel.filtredHotel = viewModel.hotels
+            .where(
+                (hotel) => hotel.name.toLowerCase().contains(query.toLowerCase()))
+            .toList();
+      }
+
+    });
+
+
   }
 }

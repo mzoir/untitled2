@@ -9,6 +9,7 @@ class Hotel {
   String location;
   String description;
   final List<String> images;
+  double rating;
   double price;
   String reservation_link;
   String phone_number;
@@ -22,6 +23,7 @@ class Hotel {
     required this.price,
     required this.reservation_link,
     required this.phone_number,
+    required this.rating,
     required this.map
   });
 
@@ -34,7 +36,8 @@ class Hotel {
       price: json['price'],
         reservation_link : json['reservation_link'],
         phone_number :  json['phone_number'],
-      map : json['map']
+      map : json['map'],
+        rating: json['rating']
     );
   }
 

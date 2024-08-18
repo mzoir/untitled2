@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'log.dart';
 
 import 'Profile.dart';
-import 'search.dart';
 import 'package:flutter/services.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'dart:convert';
@@ -152,7 +151,7 @@ class _eveHotelState extends State<eveHotel> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => LoginPage(),
+                      builder: (context) => LogPage(),
                     ),
                   );
                 });

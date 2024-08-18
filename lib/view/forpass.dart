@@ -22,26 +22,27 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(231, 225, 214, 80),
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text('Forget Password'),
         centerTitle: true,
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.white,
       ),
       body: Column(
         children: [
+          const SizedBox(height: 50.0),
           Image.asset(
             'images/log.webp',
             width: 200,
             height: 200,
           ),
-          const SizedBox(height: 10.0),
+          const SizedBox(height: 50.0),
           const Text(
             'Forgot password',
             style: TextStyle(
               fontFamily: 'Raleway',
               fontSize: 20.0,
-              color: Colors.red,
+              color: Colors.black,
+              fontWeight: FontWeight.bold,
             ),
           ),
           const SizedBox(height: 20.0),
@@ -77,6 +78,10 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
                             ),
                           ),
                           labelText: 'Email',
+                          labelStyle: const TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                         cursorColor: const Color(0xff08d9ac),
                         validator: (value) {
@@ -90,15 +95,20 @@ class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
                       const SizedBox(height: 16.0),
                       ElevatedButton(
                         onPressed: _handleForgetPassword,
-                        child: const Text('Send'),
+                        child: const Text('Send',style:TextStyle(color:Colors.white)),
+                        style : ElevatedButton.styleFrom(
+                          backgroundColor: const Color.fromRGBO(0, 0, 240, 100),
+                          fixedSize: const Size(250, 50),
+
+                        ),
                       ),
-                      const SizedBox(height: 20.0),
+                    const SizedBox(height: 200),
                       GestureDetector(
                         onTap: () {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => const LoginPage(),
+                              builder: (context) => const LogPage(),
                             ),
                           );
                         },
